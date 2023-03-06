@@ -69,5 +69,5 @@ inputSum.addEventListener('keypress', (e) => {
 })
 
 inputSum.oninput = (e) => {
- sum.innerText = exchangeRate * parseFloat(e.target.value)
+ sum.innerText = (exchangeRate * parseFloat(e.target.value)).toFixed(4)
 }
